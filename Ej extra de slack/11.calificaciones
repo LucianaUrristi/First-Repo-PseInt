@@ -1,0 +1,23 @@
+///11)Un alumno desea saber cual será su calificación final en la materia de Algoritmos. Dicha calificación se compone de los siguientes porcentajes:
+///55% del promedio de sus tres calificaciones parciales.
+///30% de la calificación del examen final.
+///15% de la calificación de un trabajo final.
+
+Algoritmo sin_titulo
+	Definir p1, p2, p3, ef, tf, cf, promp, promef, promtf Como Real
+	
+	Escribir "Ingrese las calificaciones de los parciales"
+	Leer p1, p2, p3
+	Escribir "Ingrese calificación del exámen final"
+	Leer ef
+	Escribir "Ingrese calificación del trabajo final"
+	Leer tf
+	
+	promp = ((p1 + p2 + p3)/3) * 0.55
+	promef = ef * 0.30
+	promtf = tf * 0.15
+	
+	cf = promp + promef + promtf
+	Escribir "Su calificación final es: ", cf
+	
+FinAlgoritmo
